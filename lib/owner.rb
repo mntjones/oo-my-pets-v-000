@@ -12,7 +12,7 @@ class Owner
   
   def save
     @@all << self
-    @@count == @@all.length
+    @@count += 1
   end
   
   def self.all
@@ -21,7 +21,7 @@ class Owner
   
   def self.reset_all
     @@all = []
-    @@count = 0
+    @@count
   end
   
   def say_species
